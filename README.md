@@ -1,4 +1,7 @@
 # VidCrypt
+<p align="center">
+<a href="https://github.com/sourabhkv/VidCrypt/releases/latest/VidCrypt.exe"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/downloads/sourabhkv/VidCrypt/total?logo=GitHub&style=for-the-badge"></a><br>
+</p>
 Convert any file to encrypted video , get file file from encrypted video
 
 Every file is made of bytes , bytes range from 0-255 . These values are saved to greyscale images and losless video is made.
@@ -36,6 +39,7 @@ Developed by sourabhkv
 
 ## Example
 This image is being converted to video
+
 ![IMG_20230304_105501](https://github.com/sourabhkv/VidCrypt/assets/55890376/ff6b44d6-b341-47b2-aab8-640fd0155636)
 
 
@@ -107,7 +111,13 @@ File verified
 ![image](https://github.com/sourabhkv/VidCrypt/assets/55890376/25835e3c-9e9c-491f-8e71-950b1b54e39a)
 ![image](https://github.com/sourabhkv/VidCrypt/assets/55890376/65f62aed-d202-4841-bb85-a4676ffade75)
 
+## Accuracy and Security
+- The video generated is less than or equal to size of the original files
+- Accuracy of data to store v/s final video size ~ 99.7 %
+- The files are encrypted with binary data so even some tries to decrypt files manually chances are they won't succesfully (1 in roughly ~1.45 x 10^60) decrypt since they dont know when the files are ending and when binary data starts and when zip file bytes starts. If there is a wrong / missing byte this would result in corrupt files. 
+
 ## Application
 - Zip files with passwords can be cracked without passwords but encrypted video cant be cracked
 - Infinity storage i.e. upload encrypted video to video platform since video platform don't have size limit and decode it whenever file is needed. Brutal YouTube compression wont let even Greyscale image exist in original format , for now Vimeo will be better.
 - Multiple files can be converted to 1 video , for now make a zip and encode zip.
+- Can be extended to RGB(24 bit) , but will suffer most in YouTube.
